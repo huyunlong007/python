@@ -9,10 +9,7 @@ try:
     # cursor = conn.cursor()       #返回一个游标对象   这个对象可以执行sql语句
     with conn.cursor(cursor=pymysql.cursors.DictCursor) as cursor:  # 将默认的输出元组改为输出为字典
         # 第三步：通过游标向数据库服务器发出sql语句，获取执行结果
-        sql = '''
-
-
-        '''
+        sql = "select * from  runoob_tb1;"
         cursor.execute('sql')
         # 第四步：提交上面的操作
         conn.commit()
