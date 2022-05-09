@@ -15,7 +15,7 @@ try:
                  content  VARCHAR(6499))"""
         into = "INSERT INTO scrapy_yilong2(title,author,comment,`time`) VALUES (%s,%s, %s, %s)"
         values = (item['title'], item['author'], item['comment'], item['time'])
-        cursor.execute('sql','into','values')
+        cursor.execute(sql, into, values)
         # 第四步：提交上面的操作
         conn.commit()
 except pymysql.MySQLError as err:
