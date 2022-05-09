@@ -13,7 +13,7 @@ try:
         cursor.execute(sql)
 
         into = "INSERT INTO xiaoshuo(title,sec_title,content) VALUES (%s,%s, %s);"
-        values =('4', 'white', '8')
+        values =(4, 'white', 28)
         cursor.execute(into, values)
         # 第四步：提交上面的操作
         conn.commit()
