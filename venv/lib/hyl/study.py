@@ -26,3 +26,6 @@ while i<=100:
     i+=1
 print(sum)
 
+#方法三 使用sum和range函数
+def sum():
+    print(sum(range(1,101)))
