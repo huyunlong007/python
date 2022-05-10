@@ -23,6 +23,9 @@ human_name='eric'
 print("hello "+human_name.title()+", would u like to learn some python today!")
 
 #整数、浮点数
-def sum():
-    print(sum(range(1,101)))
+age=27
+message="happy "+str(age)+"th birthday!"
+print(message)
+
+print(2/5*3)
 
