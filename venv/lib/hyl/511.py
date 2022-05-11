@@ -23,5 +23,11 @@ print(motorcycle)
 poped_motorcycle=motorcycle.pop() #pop删除末尾元素，并能接着使用
 print(motorcycle)
 print(poped_motorcycle)
+motorcycle.remove('yamaha') #删除对应元素还可以使用
+print(motorcycle)
+too_expensive='ducati'
+motorcycle.remove(too_expensive)
+print(motorcycle)
+print("\na "+too_expensive+"\tis too expensive for me !")
 
 
