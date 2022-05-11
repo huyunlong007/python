@@ -30,6 +30,10 @@ motorcycle.remove(too_expensive)
 print(motorcycle)
 print("\na "+too_expensive+"\tis too expensive for me !")
 
+#组织列表
+cars=['BMW','bugatti','audi','lamburghini','Ferrgri']
+cars.sort() #sort()按字母顺序排列
+print(cars)
 
 
 
