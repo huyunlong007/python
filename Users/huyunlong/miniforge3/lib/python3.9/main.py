@@ -12,7 +12,7 @@ bg_size = width, height = 400, 700  # 实际上是元组
 screen = pygame.display.set_mode(bg_size)  # 设置窗口
 pygame.display.set_caption("飞机大战")  # 窗口标题
 # 加载背景图片,对于普通图像的显示效果有没有convert都是一样的，但是 使用 convert 可以转换格式，提高 blit 的速度
-background = pygame.image.load("images/background.png").convert()
+background = pygame.image.load("images:background.png").convert()
 
 def main():
     # 创建时钟对象（可以控制游戏循环频率）

@@ -4,15 +4,15 @@ import pygame
 class MyPlane(pygame.sprite.Sprite):
     def __init__(self, bg_size):
         # convert_alpha()更改图像的像素格式，包括每个像素的alpha,相当于图片背景变为透明
-        self.image1 = pygame.image.load('images/me1.png').convert_alpha()
-        self.image2 = pygame.image.load('images/me2.png').convert_alpha()
+        self.image1 = pygame.image.load('images:me1.png').convert_alpha()
+        self.image2 = pygame.image.load('images:me2.png').convert_alpha()
         # 飞机摧毁图片,以数字形式保存
         self.destory_image = []
         self.destory_image.extend([
-            pygame.image.load('images/me_destroy_1.png').convert_alpha(),
-            pygame.image.load('images/me_destroy_2.png').convert_alpha(),
-            pygame.image.load('images/me_destroy_3.png').convert_alpha(),
-            pygame.image.load('images/me_destroy_4.png').convert_alpha()
+            pygame.image.load('images:me_destroy_1.png').convert_alpha(),
+            pygame.image.load('images:me_destroy_2.png').convert_alpha(),
+            pygame.image.load('images:me_destroy_3.png').convert_alpha(),
+            pygame.image.load('images:me_destroy_4.png').convert_alpha()
         ])
         # 定义屏幕宽高
         self.width = bg_size[0]
