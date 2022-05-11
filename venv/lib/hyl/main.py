@@ -2,8 +2,9 @@
 # animation.py
 
 # 导入需要的模块
-import pygame, sys
+import pygame
 from pygame.locals import *
+import sys
 import airplane
 import random
 class Game:
