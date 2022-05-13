@@ -31,3 +31,5 @@ for order in orders:
 change_orders=('beef','banana') #不能修改元组里的元素，可以重新定义个元组
 for change_order in change_orders:
     print(change_order)
+
+#设置代码格式
