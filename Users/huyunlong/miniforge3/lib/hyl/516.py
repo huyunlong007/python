@@ -43,3 +43,28 @@ for car in cars:
         print("this super car is "+car)
     else:
         print("my favourite car is "+car)
+
+####字典:一系列键-值对（key-value）
+alien_0 = {'color': 'green', 'points': 5}
+print(alien_0['color'])
+print(alien_0['points'])
+new_points = alien_0['points']
+print("you earned "+str(new_points)+" points!")
+alien_0['x_position'] = 0
+alien_0['y_position'] = 27
+print(alien_0)
+
+#
+alien_0 = {} #创建空字典
+alien_0['color'] = 'red'
+alien_0['points'] = 28
+print(alien_0)
+print("this alien is "+alien_0['color'])
+alien_0['color'] = 'black' #修改键值
+print("this alien is now "+alien_0['color'])
+
+##
+
+
+
+
