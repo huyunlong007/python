@@ -49,6 +49,11 @@ print(sum)
 ##
 number=[]
 for value in range(3,31):
-    value%3 in number
-    number.append(value)
-print(number)
+    value_1=value%3
+    if value_1 in range(3,31) and value in range(3,31):
+        number.append(value)
+        print(number)
+    else:
+        print(number)
+
+
