@@ -84,7 +84,72 @@ for alien in aliens[0:3]:
 for alien in aliens[0:5]:
     print(alien)
 
+##在字典中存储列表
+pizza = {
+    'crust': 'thick',
+    'toppings': ['mushrooms', 'extra', 'cheese'],  # 在字典中嵌套列表
+}
+print("you order a "+pizza['crust']+"- crust pizza "+"with the following topping:")
+for topping in pizza['toppings']: #循环打印配料
+    print("\t"+topping)
+##
+favorite_language = {
+    'tony': ['python', 'C++'],
+    'jerry': ['java', 'JS', 'C'],
+    'tom': ['C#', 'C++'],
+}
+for name,languages in favorite_language.items():
+    if len(languages) > 2:
+        print(languages)
+    for language in languages:
+        print(language)
+    if language == 'C++':
+        print(name.title())
+    else:
+        print(str(len(favorite_language[name])))
+print(max(str(len(favorite_language[name]))))
 
+##在字典存储字典
+users = {
+    'ae': {
+        'dragon': 'shanghai',
+        'iqiq': 'haerbin',
+    },
+    'mc': {
+        'xiaoyun': 'beijing',
+        'xiaoqi': 'shenzhen',
+    },
+}
+for user in users:
+    print(user)
+    for person,location in users[user].items(): #在字典下取值
+        #print(person)
+        print(person+": "+location)
+    print("===========")
 
+#小练习
+people = []
+for new_people in range(0,3):
+    new_people = {'person1': 'xiaoming', 'person2': 'xiaoqiang', 'person3': 'xiaohua'}
+    people.append(new_people)
+    print(new_people)
+#
+senba = {'pinzhong': 'dog', 'boss': 'xiaohua'}
+kaixi = {'pingzhong': 'cat', 'boss': 'xiaobei'}
+pets= [senba, kaixi]
+for pet in pets:
+    print(pet)
+#
+citys = {
+    'shanghai':{'population': 2500, 'fact': 'dongfangmingzhu'},
+    'beijing':{'population':2000, 'fact': 'tianan squalare'},
+    'jiangsu':{'population':5000, 'fact': 'shisantaibao'},
+}
+for city in citys:
+    print(city)
+    for pop, fac in citys[city].items():
+        print(pop)
+        print(fac)
+    print("=====")
 
 
