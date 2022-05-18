@@ -84,7 +84,6 @@ for alien in aliens[0:3]:
 for alien in aliens[0:5]:
     print(alien)
 
-###在字典中存储列表
 
 
 
