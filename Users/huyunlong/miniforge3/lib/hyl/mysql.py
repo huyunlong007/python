@@ -9,12 +9,13 @@ try:
     # cursor = conn.cursor()       #返回一个游标对象   这个对象可以执行sql语句
     with conn.cursor(cursor=pymysql.cursors.DictCursor) as cursor:  # 将默认的输出元组改为输出为字典
         # 第三步：通过游标向数据库服务器发出sql语句，获取执行结果
-        sql = "CREATE TABLE student(title  CHAR(20),sec_title  CHAR(20),content  VARCHAR(6499));"
+        sql = "CREATE TABLE class(title  CHAR(20),sec_title  CHAR(20),content  VARCHAR(6499));"
         cursor.execute(sql)
 
-        into = "INSERT INTO student(title,sec_title,content) VALUES (%s,%s, %s);"
-        values =(4, 'white', 28)
-        cursor.execute(into, values)
+        into = "INSERT INTO class(title,sec_title,content) VALUES (%s,%s, %s);"
+        values =(4, 'red', 28)
+        change_values = (5, 'black', 27)
+        cursor.execute(into, change_values)
         # 第四步：提交上面的操作
         conn.commit()
 except pymysql.MySQLError as err:
