@@ -17,6 +17,7 @@ while 'cat' in pets:
 print(pets)
 
 #
+'''
 responses = {}
 polling_active = True
 while polling_active:
@@ -29,6 +30,26 @@ while polling_active:
 print("\n ------poll result--------")
 for name,response in responses.items():
     print(name+" would you like to climb "+response)
+'''
+#小练习
+sandwich_orders = ['可爱多', '巧乐兹', '哈根达斯']
+finished_sandwiches = []
+while sandwich_orders:
+    current_order = sandwich_orders.pop()
+    print("verifying order: "+current_order)
+    finished_sandwiches.append(current_order)
+print("\n the following orders been confirmed:")
+for finished_sandwich in finished_sandwiches:
+    print(finished_sandwich)
+
+
+
+
+
+
+
+
+
 
 
 
