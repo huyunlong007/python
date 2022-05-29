@@ -34,6 +34,9 @@ class User():
     user.describe_user()
     user.greet_user()
 
+#使用类和实例
+
+
 
 
 
