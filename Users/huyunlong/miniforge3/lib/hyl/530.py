@@ -22,5 +22,9 @@ class ElectricCar(Car):   #在定义子类必须在括号指定父类的名称
     def __init__(self, make, model, year):
         '''初始化父类的属性'''
         super().__init__(make, model, year)  #super()特殊函数让父类和子类关联起来
+        self.battery_size = 70  #添加一个新的属性并设置默认值
+    def describe_battery(self):
+        print("This car has a " + str(self.battery_size) + "-kWh battery.")
 my_tesla = ElectricCar('tesla', 'model s', 2019)
 print(my_tesla.get_descriptive_name())
+my_tesla.describe_battery()
