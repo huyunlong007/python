@@ -30,16 +30,17 @@ class ElectricCar(Car):   #在定义子类必须在括号指定父类的名称
         print("this car doesn't need a gas tank!")
 
 class Battery():
-    def __init__(self,battery_siza = 90):
+    def __init__(self, battery_siza = 90, car_model = 'model 3'):
         self.battery_size = battery_siza
+        self.car_model = car_model
     def descibe_battery(self):
         print("This car has a " + str(self.battery_size) + "-kWh battery.")
     def get_range(self):
-        if self.battery_size == 90:
+        if self.battery_size == 90 and self.car_model == 'model s':
             range = 240
-        elif self.battery_size == 100:
+        elif self.battery_size == 100 and self.car_model == 'model x':
             range = 270
-        message = "this car can go "+str(range)
+        message = "a "+self.car_model+" can go "+str(range)
         message += " miles on a full charge"
         print(message)
 
@@ -60,4 +61,7 @@ my_tesla.read_odometer()
 '''
 my_tesla.battery.descibe_battery()
 my_tesla.battery.battery_size = 100
+my_tesla.battery.car_model = 'model x'
+my_tesla.battery.descibe_battery()
 my_tesla.battery.get_range()
+
