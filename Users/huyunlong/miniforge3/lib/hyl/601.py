@@ -10,3 +10,7 @@ my_beetle = Car('BMW', 'M5', 2022)
 print(my_beetle.get_descriptive_name())
 my_tesla = ElectricCar('tesla', 'roadster', 2019)
 print(my_tesla.get_descriptive_name())
+#导入整个类
+import car
+my_tesla = car.ElectricCar('tesla', 'model 3', 2017)
+print(my_tesla.get_descriptive_name())
