@@ -45,7 +45,21 @@ def count_words(filename): #计算文件大致包含多少个单词
 filename = 'alice.txt'
 count_words(filename)
 
-
+##小练习
+print("please enter two numbers:")
+while True:
+    first_number = input("first number:")
+    if  first_number == 'q':
+        break
+    second_number = input("second number:")
+    if  second_number == 'q':
+        break
+    try:
+        answer = int(first_number)+int(second_number)
+    except ValueError:
+        print("input is wrong,please enter '数字' again!")
+    else:
+        print(answer)
 
 
 
